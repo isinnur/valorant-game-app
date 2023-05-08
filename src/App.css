@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+::selection {
+  background: #ff4655;
+  color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff4655;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #e92c3c;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f1923;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #0f1923;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar .button {
+  display: block;
+  width: 220px;
+  padding: 15px 8px;
+  border-radius: 20px;
+  background-color: #162431;
+  color: #fff;
+  margin-top: 20px;
+  font-size: 22px;
+  text-align: center;
+  transition: 0.2s ease-in;
+}
+
+.navbar .button:hover {
+  background-color: #ff4655;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  bottom: 0;
+  opacity: 0.5;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container > * {
+  width: calc(100% / 3 - 20px);
+  margin: 10px;
+}
+
+.container .image {
+  position: relative;
+  width: 100%;
+  visibility: visible;
+}
+
+.container .image:hover {
+  opacity: 0.2;
+  border: 3px solid #111111;
+}
+
+.container .infos {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 100px;
+  transition: opacity 0.2s ease-in-out;
+  width: 400px;
+  height: 500px;
+}
+
+button {
+  position: absolute;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #162431;
+  color: #fff;
+}
+
+button hr {
+  width: 200px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.container span p {
+  font-size: 16px;
+  color: #fff;
+}
+
+.container span {
+  color: #ff4655;
+}
+
+.weapons-container {
+  width: 400px;
+  height: 400px;
+}
+
+.weapons-name {
+  color: #ff4655;
+  font-size: 27px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.weapons-image {
+  object-fit: cover;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.agents-container {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 200px;
+  position: relative;
+  display: inline-block;
+}
+
+.agents-name {
+  color: #ff4655;
+  font-size: 27px;
+  text-align: center;
+}
+
+.agents-image {
+  object-fit: cover;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: block;
+}
+
+.info {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 400px;
+  height: 470px;
+  padding: 10px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  transition: 0.4s ease-in-out;
+}
+
+.agents-image:hover {
+  opacity: 0.7;
+}
+
+.icon-small {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.agents-image:hover + .info {
+  display: block;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+
+.main-img {
+  width: 75px;
+  height: 75px;
+}
